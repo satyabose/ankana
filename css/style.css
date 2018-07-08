@@ -296,6 +296,8 @@ footer .ankana-social ul li a{
 }
 .we-do h2{
 	font-size: 30px;
+	background: #333;
+    	padding: 5px 10px;
 }
 .we-do h2.border-white:after{
 	width: 30%;
