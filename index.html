@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+	<title>Best Interior Exterior Design Firm of Odisha</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index, follow"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<!--=============== css  ===============-->	
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="d3/css/result-light.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<!--=============== favicons ===============-->
+	<link rel="shortcut icon" href="images/favicon/favicon.ico">
+
+	<!--=============== JS  ===============-->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="d3/js/d3.v3.min.js"></script>
+	<script type="text/javascript" src="d3/js/jquery-1.10.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript"> //<![CDATA[
+$(window).load(function(){
+var duration   = 500,
+    transition = 200;
+
+drawDonutChart(
+  '#donut',
+  $('#donut').data('donut'),
+  180,
+  180,
+  ".35em"
+);
+
+drawDonutChart(
+  '#donut1',
+  $('#donut1').data('donut'),
+  180,
+  180,
+  ".35em"
+);
+
+drawDonutChart(
+  '#donut2',
+  $('#donut2').data('donut'),
+  180,
+  180,
+  ".35em"
+);
+function drawDonutChart(element, percent, width, height, text_y) {
+  width = typeof width !== 'undefined' ? width : 290;
+  height = typeof height !== 'undefined' ? height : 290;
+  text_y = typeof text_y !== 'undefined' ? text_y : "-.10em";
+
+  var dataset = {
+        lower: calcPercent(0),
+        upper: calcPercent(percent)
+      },
+      radius = Math.min(width, height) / 2,
+      pie = d3.layout.pie().sort(null),
+      format = d3.format(".0%");
+
+  var arc = d3.svg.arc()
+        .innerRadius(radius - 20)
+        .outerRadius(radius);
+
+  var svg = d3.select(element).append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+  var path = svg.selectAll("path")
+        .data(pie(dataset.lower))
+        .enter().append("path")
+        .attr("class", function(d, i) { return "color" + i })
+        .attr("d", arc)
+        .each(function(d) { this._current = d; }); // store the initial values
+
+  var text = svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("dy", text_y);
+
+  if (typeof(percent) === "string") {
+    text.text(percent);
+  }
+  else {
+    var progress = 0;
+    var timeout = setTimeout(function () {
+      clearTimeout(timeout);
+      path = path.data(pie(dataset.upper)); // update the data
+      path.transition().duration(duration).attrTween("d", function (a) {
+        var i  = d3.interpolate(this._current, a);
+        var i2 = d3.interpolate(progress, percent)
+        this._current = i(0);
+        return function(t) {
+          text.text( format(i2(t) / 100) );
+          return arc(i(t));
+        };
+      }); // redraw the arcs
+    }, 200);
+  }
+};
+
+function calcPercent(percent) {
+  return [percent, 100-percent];
+};
+
+});//]]> 
+
+</script>
+	
+  </head>
+   <body>
+    
+	<div class="container-fluid rm-hr-padding">
+	<header>
+
+	
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="row nav-holder rm-hr-padding">
+				<div class="col-md-8 offset-4 rm-hr-padding nav-bg">
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-brand" href="#"></a>
+						<button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav col-md-9">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Portfolio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Products</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">About Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Services</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact Us</a>
+								</li>
+							</ul>
+							<div class="ankana-social col-md-3">
+								<ul class="text-right">
+									<li><a href="http://www.facebook.com/ankana.in" target="_blank" class=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+								</ul>
+		        			</div>
+						</div>
+					</nav>
+				</div>
+	        
+	    </div>
+			<div class="carousel-caption">
+					<h1 class="border-white">OUR FEATURED WORKS</h1>
+					<p>INTERIORS AND EXTERIORS</p>
+					<button type="button" class="btn btn-light">View Residential Projects</button>
+				</div>
+
+				<div class="intro-bg">
+				<img src="images/bg-orange.png" class="img-responsive">
+				</div>
+				<div class="logo-bg">
+					<a href="http://ankana.in"><img src="images/logo-ankana.jpg"></a>
+					<img src="images/bg-logo.png" class="img-responsive">
+				</div>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img class="d-block w-100" src="images/banner/marvel8.png?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="images/banner/14.jpeg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="images/banner/11.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="images/banner/10.jpeg?auto=yes&bg=444&fg=222&text=Fourt slide" alt="Fourth slide">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</header>
+	<div class="main-container">
+		<div class="our-story text-center pt-5 pb-5">
+			<div class="container">
+				<h1 class="border-grey d-inline">OUR AWESOME STORY</h1>
+				<p class="mt-4">Architecture is not all about the design of the building and nothing else, it is also about the cultural setting and the ambience, the whole affair. It is the art which so disposes and adorns the edifices raised by man, that the sight of them may contribute to his mental health, power, and pleasure.</p>
+				<div class="col-md-4 m-auto"><button type="button" class="btn btn-orange btn-block">View Commercial Projects</button></div>
+			</div>
+		</div>
+		<div class="our-skills pt-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h1 class="border-white d-inline">OUR SKILLS</h1>
+						<p class="mt-4">Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations. All our projects incorporate a unique artistic image and functional solutions. Client is the soul of the project. Our main goal is to illustrate his/hers values and individuality through design.</p>
+					</div>
+					<div class="col-md-8 mt-4">
+						<div class="zipper mt-5">
+							<div class="current">
+							<div id="donut" data-donut="85"></div>
+							<div class="title_text">Design</div>
+							</div>
+							<div class="current">
+							<div id="donut1" data-donut="95"></div>
+							<div class="title_text">Architecture</div>
+							</div>
+							<div class="current">
+							<div id="donut2" data-donut="80"></div>
+							<div class="title_text">Construction</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-studio">
+			<div class="pattern">
+				<div class="container">
+					<div class="col-md-6 m-auto bg-gray">
+						<div class="row">
+							<div class="col-md-3 lamp">
+							<img src="images/lamp.png">
+							</div>
+							<div class="col-md-9">
+							<h2>About Our <br> <div>Studio</div></h2>
+							<p>Architecture is the learned game, correct and magnificent, of forms assembled in the light and an architect is the drawer of dreams. At Concept, we believe that each client, site or client holds unique opportunities that our multi disciplined and management approach can design a solution that is creatively distinct, environmentally responsible and makes a lasting impression to its place.</p></div>
+						</div>
+					</div>
+					<div class="we-do col-md-8 m-auto text-center">
+						<h2 class="border-white d-inline">What We Do</h2>
+						<ul>
+							<li><img src="images/small-icon-design.png"><div>Design</div></li>
+							<li><img src="images/small-icon-architecture.png"><div>Architecture</div></li>
+							<li><img src="images/small-icon-construction.png"><div>Construction</div></li>
+							<li><img src="images/small-icon-landscape.png"><div>Landscaping</div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="our-team pt-5 pb-4">
+			<div class="container">
+				<h2 class="mb-4 text-center col-md-5 m-auto">Our Fantastic Team</h2>
+				<div class="row mt-5">
+					<div class="col-md-5">
+						<img src="images/team.jpg" class="img-thumbnail text-left">
+					</div>
+					<div class="col-md-7">
+						<h5>Rama Krishna Jena</h5>
+						<small>Founder, Chief</small>
+						<P>We hand-craft creative Projects Interior, Exterior, Landscaping</P>
+						<p>Date: 2018</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="col-md-9 m-auto">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="http://ankana.in"><img src="images/logo-footer.jpg" class="mb-3"></a>
+				<p class="mb-3">Contact Ankana Interior & Exterior at Two Offices either at Cuttack or Bhubaneswar.
+				</p>
+				<span class="copyright border-orange">© ANKANA INTERIORS & EXTERIORS 2017. ALL RIGHTS RESERVED.
+					<small>
+						<div class="ankana-social">
+							<a href="http://ankana.in" class="pull-left">www.ankana.in</a>
+							<ul class="pull-left">
+								<li><a href="http://www.facebook.com/ankana.in" target="_blank" class=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+							</ul>
+				        </div>
+					</small>
+				</span>
+				</div>
+				<div class="col-md-4">
+					<h4 class="border-white mt-5">HEAD OFFICE CONTACT INFO</h4>
+					<p>S.B.Mansion , 2nd Floor , Infront of LIC Office, Link Road Kataka-753012, Odisha</p>
+					<small>Tel: <a href="#">0671 - 2367314</a> <br> Email: <a href="mailto:ramakrishnajena@ankana.in">ramakrishnajena@ankana.in</a></small>
+				</div>
+				<div class="col-md-4">
+					<h4 class="border-white mt-5">BBSR OFFICE CONTACT INFO</h4>
+					<p>Plot Sector 5 / 68 , Niladrivihar, Chandrasekharpur, Bhubaneswar 751021, Odisha</p>
+					<small>Tel: <a href="#">0674 2720272</a> <br> Email: <a href="mailto:ramakrishnajena@ankana.in">ramakrishnajena@ankana.in</a></small>
+				</div>	
+			</div>
+		</div>
+	</footer>
+	</div>
+
+  </body>
+</html>
