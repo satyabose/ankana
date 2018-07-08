@@ -1,0 +1,47 @@
+
+ .zipper{  
+    display:block;
+    width:100%;
+}
+
+.current,.target{
+   display:inline-block; 
+    text-align:center;
+    padding: 2%;
+}
+@media only screen and (max-width: 550px) {
+  .current, .target {
+      display: inline-block;
+      text-align: center;
+      padding: 2%;
+      width: 100%;
+  }
+}
+
+.current .title_text{
+color: #ffffff;
+text-transform: uppercase;
+font-style: italic;
+color: #CECECE;
+}
+
+text {
+  font-family: "RamaGothicM-Heavy",Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black",sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 16rem;
+  fill: #DB8609;
+}
+
+#donut,#donut1 {
+margin: 0 auto;
+display:inline-block;  
+}
+
+path.color0 {
+  fill: #DB8609;
+}
+
+path.color1 {
+  fill: #000000;
+}
