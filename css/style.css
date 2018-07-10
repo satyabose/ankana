@@ -21,6 +21,7 @@ header nav ul li{
 	display: inline;
 	list-style: none;
 	margin: 0px 11px;
+  text-align: center;
 }
 header nav ul li a{
 	color: #424242;
@@ -39,17 +40,18 @@ header nav ul li a{
   padding-left:0 !important;
 }
 .navbar-light .navbar-nav .nav-link{
-      padding-left: 10px !important;
+      /*padding-left: 10px !importan*/
+      color: #333 !important;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1680px) {
   .img-responsive{
-      width: 70% !important;
+      /*width: 70% !important;*/
     }
     .logo-bg a img {
     width: 70% !important;
     }
     header nav ul li{
-      margin: 0px 5px !important;
+      margin: 0px 10px;
     }
     .navbar-light .navbar-nav .nav-link{
       font-size: 0.9em !important;
@@ -63,10 +65,69 @@ header nav ul li a{
     .ankana-social ul li a{
       margin: 0 !important;
     }
+    .logo-bg, .intro-bg{
+    width: 40%;
+    }
+    .navbar-expand-lg .navbar-nav{
+      padding-left: 50px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+  .logo-bg, .intro-bg{
+    width: 40% !important;
+  }
+  .logo-bg a {
+    left: 35px !important;
+    top: 35px !important;
+  }
+  .navbar-light .navbar-nav .nav-link{
+      font-size: 0.8em !important;
+  }
+  .ankana-social ul li a {
+    margin: 0px !important;
+    font-size: 1em !important;
+    padding: 2px !important;
+  }
+  .navbar-expand-lg .navbar-nav{
+    padding-left: 25px;
+  }
+  .carousel-caption h1 {
+    margin: 0 0 10px 0 !important;
+    padding: 0 0 5px 0 !important;
+    font-size: 20px !important;
+  }
+  .carousel-caption p, .our-skills p{
+    font-size: 0.9em !important;
+  }
+  h1 {
+    font-size: 35px !important;
+  }
+  .main-container {
+    font-size: 14px !important;
+  }
+  .we-do ul li div{
+    font-weight: bold !important;
+    padding-top: 6px !important;
+    text-shadow: 3px 3px 4px #333 !important;
+  }
+  .we-do ul li{
+    margin:30px 20px 10px 20px !important;
+  }
+  header nav ul li{
+    margin: 0px 5px;
+  }
 }
 @media only screen and (max-width: 991px) {
+    header nav ul li{
+      margin: 0px 15px !important;
+      text-align: left !important;
+    }
     .navbar {
       background-color: #323232;
+    }
+    .navbar-expand-lg .navbar-nav {
+      padding-left: 0 !important;
+      max-width: 100%;
     }
     .navbar-light .navbar-toggler{
       border:0px !important;
@@ -77,20 +138,20 @@ header nav ul li a{
     }
     .navbar-collapse{
       text-align: left;
-      width: 45%;
       position: absolute;
       right: 0px;
       top: 45px;
       background: #bcb3ac;
     }
     .navbar-light .navbar-nav .nav-link{
-          color: #ffffff;
+      color: #ffffff;
     }
     .nav-bg{
       z-index: 999;
     }
     .ankana-social{
       max-width: 100%;
+      padding-left: 0 !important;
     }
     .ankana-social ul{
       padding: 0 !important;
@@ -110,14 +171,45 @@ header nav ul li a{
     }
     .carousel-caption{
       bottom: 0 !important;
+      left: 10% !important;
     }
     .carousel-caption h1{
       font-size: 1.3em !important;
     }
+    .logo-bg, .intro-bg {
+      width: 90% !important;
+    }
+    .current, .target{
+          padding: 1% !important;
+    }
+    .mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+    padding-right: 0 !important;
+    }
+    .we-do ul li {
+      margin: 15px 8px 0px 8px !important;
+    }
+    .our-team h2{
+      font-size: 25px !important;
+    }
 }
 @media only screen and (max-width: 768px){
-  .carousel-caption{
-    display: none;
+  .carousel-caption {
+    left: 10% !important;
+    width: 30% !important;
+  }
+  .carousel-caption h1{
+    font-size: 1.1em !important;
+    font-weight: 400 !important;
+  }
+  .btn{
+    font-size: 0.8rem !important;
+  }
+  .lamp {
+    padding-top: 0 !important;
+  }
+  .we-do ul li {
+    margin: 30px 40px 10px 40px !important;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -133,6 +225,15 @@ header nav ul li a{
   }
   .ankana-social ul li a{
     padding:0px !important;
+  }
+  .carousel-caption{
+    display: none;
+  }
+  .intro-bg{
+    display: none;
+  }
+  .img-responsive{
+    width: 70% !important;
   }
 }
 header nav ul li a{
@@ -201,8 +302,8 @@ footer .ankana-social ul li a{
 
 .carousel-caption {
     position: absolute;
-    bottom: 120px;
-    left: 8%;
+    /*bottom: 120px;*/
+    left: 5%;
     z-index: 3;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -277,13 +378,13 @@ footer .ankana-social ul li a{
 	background: #333333;
 }
 .current, .target{
-      display: ;
+   
 }
 .about-studio{
 	background: url(../images/IMG_0438_big.jpg);
 }
 .about-studio h2{
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #DF8500;
@@ -292,12 +393,12 @@ footer .ankana-social ul li a{
 .about-studio h2 div{
 	font-weight: 500;
 	color: #ffffff;
-	font-size: 35px;
+	font-size: 30px;
 }
 .we-do h2{
 	font-size: 30px;
-	background: #333;
-    	padding: 5px 10px;
+  background: #333;
+  padding: 5px 10px;
 }
 .we-do h2.border-white:after{
 	width: 30%;
